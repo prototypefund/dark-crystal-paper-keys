@@ -1,0 +1,23 @@
+{
+  "name": "paper-key-export",
+  "version": "1.0.0",
+  "description": "Export cryptographic keys to an easily printable format",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.test.js | tap-spec"
+  },
+  "author": "Magma Collective",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "bip39": "^3.0.2",
+    "markdown-pdf": "^10.0.0",
+    "qrcode": "^1.4.4",
+    "skrub": "^1.4.0",
+    "tmp": "^0.1.0"
+  },
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0",
+    "tape-plus": "^1.0.0"
+  }
+}
