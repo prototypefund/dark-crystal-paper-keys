@@ -36,8 +36,9 @@ paperKeys.createPdf('./key-backup.pdf', keys, (err) => {
 
 creates a pdf `outputFile`.
 - `keys` should be an array of objects of the form:
-  - `name` - a string describing the key.
+  - `name` - a string describing the key (may contain markdown formatting).
   - `data` - the key as a buffer or hex encoded string.
+  - `comment` - an optional comment string to include (may contain markdown formatting). 
 
 ### `removePdf (filePath)`
 Securely removes the given file.  Returns a promise.

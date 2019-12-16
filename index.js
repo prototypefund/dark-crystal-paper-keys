@@ -22,6 +22,7 @@ async function createPdf (outputFile, keys, callback) {
       {}
     )
     markdown += `## ${key.name}\n![qrcode](${filename})\n`
+    if (key.comment) markdown += `${key.comment}\n`
     markdown += `${bip39.entropyToMnemonic(key.data)}\n---\n`
     return filename
   }))
