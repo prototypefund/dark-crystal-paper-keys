@@ -1,5 +1,5 @@
 {
-  "name": "paper-key-export",
+  "name": "paper-key-backup",
   "version": "1.0.0",
   "description": "Export cryptographic keys to an easily printable format",
   "main": "index.js",
